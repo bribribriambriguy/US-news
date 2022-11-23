@@ -25,5 +25,3 @@ for article in articles:
 	print('Author: %s'% auth)
 	print('Link: %s' % url)
 	print('\n')
-
-#print(articles)
