@@ -1,11 +1,12 @@
 import requests
+import sys
 
 url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=ab42f6e37d7b447bacdaf4018551d51a"
 
 news = requests.get(url)
 
 if news.status_code != 200:
-    print("Bad Request")
+    sys.exit("Bad Request")
 
 news=news.json()
 articles = news["articles"]
